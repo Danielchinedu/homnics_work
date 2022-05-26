@@ -1,0 +1,19 @@
+.services__info {
+    display: flex;
+    width: 60%;
+
+    &-icon {
+        align-self: flex-start;
+    }
+
+    &-text {
+        margin-left: .8rem;
+
+        &-primary {
+            font-family: 'RedHatDisplay', sans-serif;
+            font-weight: 500 !important;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+        }
+    }
+}
