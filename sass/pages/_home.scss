@@ -166,4 +166,49 @@
             line-height: 3rem;
         }
     }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4rem;
+    }
+}
+
+.section-subscribe {
+    padding: 4rem 18rem 4rem 18rem;
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe {
+    width: 82.7rem;
+    padding: 4rem auto;
+    background-color: $color-default-grey;
+    padding-bottom: 4rem;
+    border-radius: 1.6rem;
+
+    &__text {
+        text-align: center;
+        margin: 4rem 0;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+
+        &-input {
+            width: 30% !important;
+        }
+
+        &-btn {
+            width: 20%;
+            margin-left: 1.5rem;
+        }
+    }
+
+    &-btn {
+        padding: .8rem 1.5rem !important;
+        font-size: 1.2rem !important;
+    }
 }
