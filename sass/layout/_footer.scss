@@ -1,0 +1,115 @@
+$footer-link-color: #353535;
+$footer-grey-color: #818182;
+
+.footer {
+    margin: 4rem 18rem 8rem 18rem;
+    font-size: 1.5rem;
+
+    &__link {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 4rem;
+    }
+
+    &__item {
+        &-header {
+            text-transform: uppercase;
+            margin-bottom: .5rem;
+        }
+
+        &--contact {
+            flex-basis: 20%;
+        }
+
+        &-address {
+            letter-spacing: 1px;
+            color: $footer-link-color;
+            font-size: 1.4rem;
+            word-wrap: break-word;
+            margin: 1.4rem 0;
+        }
+
+        &-phone {
+            letter-spacing: 1px;
+            color: $footer-link-color;
+            font-size: 1.4rem;
+            word-wrap: break-word;
+            margin: 1.4rem 0;
+        }
+
+        &-whatsapp {
+            margin: 1.4rem 0;
+        }
+
+        &-email {
+            letter-spacing: 1px;
+            color: $footer-link-color;
+            font-size: 1.4rem;
+            word-wrap: break-word;
+        }
+    }
+
+    &__whatsapp {
+        &--link {
+            &:link,
+            &:visited {
+                display: inline-block;
+                text-decoration: none;
+                letter-spacing: 1px;
+                color: $footer-link-color;
+                font-size: 1.4rem;
+                transition: all 0.3s ease;
+            }
+
+            &:hover,
+            &:active {
+                font-weight: 900;
+                transform: translateY(-.5rem);
+            }
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+
+        &-item {
+            margin: 1.4rem 0;
+
+            &--link {
+                &:link,
+                &:visited {
+                    display: inline-block;
+                    text-decoration: none;
+                    letter-spacing: 1px;
+                    color: $footer-link-color;
+                    font-size: 1.4rem;
+                    transition: all 0.3s ease;
+                }
+
+                &:hover,
+                &:active {
+                    font-weight: 900;
+                    transform: translateY(-.5rem);
+                }
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        margin-top: 8rem;
+    }
+
+    &__text {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+
+        font-family: 'RedHatText', sans-serif;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        color: $footer-grey-color;
+    }
+}
