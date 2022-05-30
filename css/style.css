@@ -501,6 +501,75 @@ body {
     #nav-toggle.active span:after {
       transform: rotate(-45deg); }
 
+.footer {
+  margin: 4rem 18rem 8rem 18rem;
+  font-size: 1.5rem; }
+  .footer__link {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem; }
+  .footer__item-header {
+    text-transform: uppercase;
+    margin-bottom: .5rem; }
+  .footer__item--contact {
+    flex-basis: 20%; }
+  .footer__item-address {
+    letter-spacing: 1px;
+    color: #353535;
+    font-size: 1.4rem;
+    word-wrap: break-word;
+    margin: 1.4rem 0; }
+  .footer__item-phone {
+    letter-spacing: 1px;
+    color: #353535;
+    font-size: 1.4rem;
+    word-wrap: break-word;
+    margin: 1.4rem 0; }
+  .footer__item-whatsapp {
+    margin: 1.4rem 0; }
+  .footer__item-email {
+    letter-spacing: 1px;
+    color: #353535;
+    font-size: 1.4rem;
+    word-wrap: break-word; }
+  .footer__whatsapp--link:link, .footer__whatsapp--link:visited {
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #353535;
+    font-size: 1.4rem;
+    transition: all 0.3s ease; }
+  .footer__whatsapp--link:hover, .footer__whatsapp--link:active {
+    font-weight: 900;
+    transform: translateY(-0.5rem); }
+  .footer__list {
+    list-style-type: none; }
+    .footer__list-item {
+      margin: 1.4rem 0; }
+      .footer__list-item--link:link, .footer__list-item--link:visited {
+        display: inline-block;
+        text-decoration: none;
+        letter-spacing: 1px;
+        color: #353535;
+        font-size: 1.4rem;
+        transition: all 0.3s ease; }
+      .footer__list-item--link:hover, .footer__list-item--link:active {
+        font-weight: 900;
+        transform: translateY(-0.5rem); }
+  .footer__social {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem; }
+  .footer__text {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    font-family: 'RedHatText', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #818182; }
+
 .section-services {
   display: flex;
   padding: 4rem 18rem 0 18rem; }
