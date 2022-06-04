@@ -264,3 +264,119 @@
         }
     }
 }
+
+.section-healthplan {
+    margin: 4rem 0 4rem 0;
+    display: flex;
+    justify-content: center;
+
+    background-color: $color-white-neutral;
+}
+
+.healthplan {
+    margin: 4rem 0;
+
+    &__text {
+        text-align: center;
+        margin-bottom: 2rem;
+
+        &--primary {
+            font-family: 'RedHatDisplay', sans-serif;
+            font-weight: 500;
+            font-size: 2.4rem;
+            line-height: 2.88rem;
+            padding-bottom: 1.4rem;
+        }
+
+        &-toggle {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.toggle {
+    &__left {
+        margin-right: 2rem;
+        font-family: 'RedHatDisplay', sans-serif;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.92rem;
+        text-transform: uppercase;
+        color: $color-black;
+    }
+
+    &__right {
+        margin-left: 2rem;
+        font-family: 'RedHatDisplay', sans-serif;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.92rem;
+        text-transform: uppercase;
+        color: $color-primary;
+    }
+}
+
+.healthplan__tabset {
+    text-align: center;
+
+    input[type="radio"] {
+        position: absolute;
+        left: -200vw;
+    }
+
+    &-panel {
+        display: none;
+    }
+
+    label {
+        position: relative;
+        display: inline-block;
+        padding: 1rem;
+        border: 1px solid transparent;
+        border-bottom: 0;
+        cursor: pointer;
+        font-weight: 600;
+
+        &:hover,
+        &:focus + input:focus + label {
+            color: $color-primary;
+        }
+
+        margin-right: -2px;
+        border-radius: .2rem;
+    }
+
+    input:checked + label {
+        color: $color-primary;
+    }
+
+    input:checked + label {
+        border-color: $color-grey-border;
+        border-bottom: 1px solid $color-white-neutral !important;
+    }
+
+    :not(input:checked) + label {
+        border-color: $color-white-neutral;
+        border-bottom: 1px solid $color-grey-border;
+        margin-left: 0px;
+    }
+
+    &-panel {
+        margin-top: 1rem;
+    }
+}
+
+.plan-container {
+    display: flex !important;
+    justify-content: space-between;
+}
+
+.healthplan__tabset > input:first-child:checked ~ .healthplan__tabset-panels > .healthplan__tabset-panel:first-child,
+.healthplan__tabset > input:nth-child(3):checked ~ .healthplan__tabset-panels > .healthplan__tabset-panel:nth-child(2),
+.healthplan__tabset > input:nth-child(5):checked ~ .healthplan__tabset-panels > .healthplan__tabset-panel:nth-child(3),
+.healthplan__tabset > input:nth-child(7):checked ~ .healthplan__tabset-panels > .healthplan__tabset-panel:nth-child(4),
+.healthplan__tabset > input:nth-child(9):checked ~ .healthplan__tabset-panels > .healthplan__tabset-panel:nth-child(5),
+.healthplan__tabset > input:nth-child(11):checked ~ .healthplan__tabset-panels > .healthplan__tabset-panel:nth-child(6) {
+  display: block;
+}
