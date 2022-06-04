@@ -40,4 +40,8 @@ $animationSpeed: 40s;
 		height: 10rem;
 		width: 25rem;
 	}
+
+    @include respond(small-phone) {
+        width: 100%;
+    }
 }
