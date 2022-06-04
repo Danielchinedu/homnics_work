@@ -380,3 +380,23 @@
 .healthplan__tabset > input:nth-child(11):checked ~ .healthplan__tabset-panels > .healthplan__tabset-panel:nth-child(6) {
   display: block;
 }
+
+.section-partners {
+    margin: 8rem 0 8rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.partners {
+    &__title {
+        text-align: center;
+
+        &--primary {
+            font-family: 'RedHatDisplay', sans-serif;
+            font-weight: 500;
+            font-size: 2.4rem;
+            line-height: 2.88rem;
+            color: #01232B;
+        }
+    }
+}
