@@ -1,11 +1,15 @@
 .section-services {
     display: flex;
     padding: 4rem 18rem 0 18rem;
+    
+    @include respond(small-phone) {
+        padding: 2rem 3rem 2rem 3rem;
 
+        flex-direction: column;
+    }
 }
 
 .services {
-
     &__text {
         &-primary {
             font-family: 'RedHatDisplay', sans-serif;
@@ -116,11 +120,25 @@
             border-radius: 0.45rem;
             transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
         }
+
+        @include respond(small-phone) {
+            align-items: flex-start;
+            margin-top: 4rem;
+            width: 100%;
+        }
     }
 
     &__image {
         flex-basis: 33%;
         animation: moveInBottom 2s ease-out;
+
+        &--img{
+            width: 100%;
+        }
+
+        @include respond(small-phone) {
+            display: none;
+        }
     }
 }
 
@@ -145,12 +163,20 @@
 
 .section-service {
     padding: 0 18rem 4rem 18rem;
+
+    @include respond(small-phone) {
+        padding: 1rem 3rem 2rem 3rem;
+    }
 }
 
 .service {
     
     &__text {
         width: 40%;
+
+        @include respond(small-phone) {
+            width: 100%;
+        }
 
         &-primary {
             font-family: 'RedHatDisplay', sans-serif;
@@ -171,6 +197,12 @@
         display: flex;
         justify-content: space-between;
         margin-top: 4rem;
+
+        @include respond(small-phone) {
+            flex-direction: column;
+            align-content: space-between;
+            align-items: center;
+        }
     }
 }
 
@@ -178,6 +210,10 @@
     padding: 4rem 18rem 4rem 18rem;
     display: flex;
     justify-content: center;
+
+    @include respond(small-phone) {
+        padding: 1rem 2rem 1rem 2rem;
+    }
 }
 
 .subscribe {
@@ -221,6 +257,11 @@
     border-radius: 2rem;
     background-color: $color-primary;
 
+    @include respond(small-phone) {
+        margin: 4rem 3rem 4rem 3rem;
+        padding: 0;
+    }
+
     &__text {
         flex-basis: 60%;
         margin-left: 10rem;
@@ -230,6 +271,11 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        @include respond(small-phone) {
+            flex-basis: 100%;
+            margin: 3rem;
+        }
 
         &--title {
             font-family: 'RedHatDisplay', sans-serif;
@@ -261,6 +307,10 @@
 
         &-1 {
             margin-bottom: -0.4rem;
+        }
+
+        @include respond(small-phone) {
+            display: none;
         }
     }
 }
@@ -370,6 +420,12 @@
 .plan-container {
     display: flex !important;
     justify-content: space-between;
+
+    @include respond(small-phone) {
+        flex-direction: column;
+        align-content: space-between;
+        align-items: center;
+    }
 }
 
 .healthplan__tabset > input:first-child:checked ~ .healthplan__tabset-panels > .healthplan__tabset-panel:first-child,
@@ -385,6 +441,10 @@
     margin: 8rem 0 8rem 0;
     display: flex;
     justify-content: center;
+    
+    @include respond(small-phone) {
+        margin: 4rem 0;
+    }
 }
 
 .partners {
@@ -398,5 +458,9 @@
             line-height: 2.88rem;
             color: #01232B;
         }
+    }
+
+    @include respond(small-phone) {
+        width: 100%;
     }
 }

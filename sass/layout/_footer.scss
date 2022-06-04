@@ -5,10 +5,19 @@ $footer-grey-color: #818182;
     margin: 4rem 18rem 8rem 18rem;
     font-size: 1.5rem;
 
+    @include respond(small-phone) {
+        margin: 4rem 1rem 6rem 1rem;
+    }
+
     &__link {
         display: flex;
         justify-content: space-between;
         padding: 0 4rem;
+
+        @include respond(small-phone) {
+            padding: 1;
+            flex-wrap: wrap;
+        }
     }
 
     &__item {

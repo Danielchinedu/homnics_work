@@ -253,7 +253,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin: 1rem; }
   .service__box-title {
     font-family: 'RedHatDisplay', sans-serif;
     font-weight: 500;
@@ -373,6 +374,9 @@ body {
     color: #fff !important; }
   .plan-card:not(:last-child) {
     margin-right: 1rem; }
+    @media only screen and (max-width: 31.25em) {
+      .plan-card:not(:last-child) {
+        margin-bottom: 1rem; } }
 
 .slider {
   background: #fff;
@@ -402,6 +406,9 @@ body {
   .slider .slide {
     height: 10rem;
     width: 25rem; }
+  @media only screen and (max-width: 31.25em) {
+    .slider {
+      width: 100%; } }
 
 .container {
   padding: 0;
@@ -440,6 +447,9 @@ body {
     height: auto;
     max-width: 50%;
     color: #fff; }
+    @media only screen and (max-width: 31.25em) {
+      .header__text-section {
+        max-width: 100%; } }
   .header__calendar-section {
     align-self: center;
     flex-basis: 40%;
@@ -692,10 +702,17 @@ body {
 .footer {
   margin: 4rem 18rem 8rem 18rem;
   font-size: 1.5rem; }
+  @media only screen and (max-width: 31.25em) {
+    .footer {
+      margin: 4rem 1rem 6rem 1rem; } }
   .footer__link {
     display: flex;
     justify-content: space-between;
     padding: 0 4rem; }
+    @media only screen and (max-width: 31.25em) {
+      .footer__link {
+        padding: 1;
+        flex-wrap: wrap; } }
   .footer__item-header {
     text-transform: uppercase;
     margin-bottom: .5rem; }
@@ -761,6 +778,10 @@ body {
 .section-services {
   display: flex;
   padding: 4rem 18rem 0 18rem; }
+  @media only screen and (max-width: 31.25em) {
+    .section-services {
+      padding: 2rem 3rem 2rem 3rem;
+      flex-direction: column; } }
 
 .services__text-primary {
   font-family: 'RedHatDisplay', sans-serif;
@@ -847,10 +868,20 @@ body {
     border: 1px solid #ced4da;
     border-radius: 0.45rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
+  @media only screen and (max-width: 31.25em) {
+    .services__form {
+      align-items: flex-start;
+      margin-top: 4rem;
+      width: 100%; } }
 
 .services__image {
   flex-basis: 33%;
   animation: moveInBottom 2s ease-out; }
+  .services__image--img {
+    width: 100%; }
+  @media only screen and (max-width: 31.25em) {
+    .services__image {
+      display: none; } }
 
 .services__form-input-group > .services__form-input-group-prepend > .services__form-input-group-text {
   border-top-right-radius: 0;
@@ -870,9 +901,15 @@ body {
 
 .section-service {
   padding: 0 18rem 4rem 18rem; }
+  @media only screen and (max-width: 31.25em) {
+    .section-service {
+      padding: 1rem 3rem 2rem 3rem; } }
 
 .service__text {
   width: 40%; }
+  @media only screen and (max-width: 31.25em) {
+    .service__text {
+      width: 100%; } }
   .service__text-primary {
     font-family: 'RedHatDisplay', sans-serif;
     font-weight: 500 !important;
@@ -888,11 +925,19 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 4rem; }
+  @media only screen and (max-width: 31.25em) {
+    .service__items {
+      flex-direction: column;
+      align-content: space-between;
+      align-items: center; } }
 
 .section-subscribe {
   padding: 4rem 18rem 4rem 18rem;
   display: flex;
   justify-content: center; }
+  @media only screen and (max-width: 31.25em) {
+    .section-subscribe {
+      padding: 1rem 2rem 1rem 2rem; } }
 
 .subscribe {
   width: 82.7rem;
@@ -922,6 +967,10 @@ body {
   justify-content: space-between;
   border-radius: 2rem;
   background-color: #0090B7; }
+  @media only screen and (max-width: 31.25em) {
+    .section-app {
+      margin: 4rem 3rem 4rem 3rem;
+      padding: 0; } }
   .section-app__text {
     flex-basis: 60%;
     margin-left: 10rem;
@@ -930,6 +979,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
+    @media only screen and (max-width: 31.25em) {
+      .section-app__text {
+        flex-basis: 100%;
+        margin: 3rem; } }
     .section-app__text--title {
       font-family: 'RedHatDisplay', sans-serif;
       font-weight: 500;
@@ -950,6 +1003,9 @@ body {
     margin: 4rem 6rem 0 2rem; }
     .section-app__img-1 {
       margin-bottom: -0.4rem; }
+    @media only screen and (max-width: 31.25em) {
+      .section-app__img {
+        display: none; } }
 
 .section-healthplan {
   margin: 4rem 0 4rem 0;
@@ -1025,6 +1081,11 @@ body {
 .plan-container {
   display: flex !important;
   justify-content: space-between; }
+  @media only screen and (max-width: 31.25em) {
+    .plan-container {
+      flex-direction: column;
+      align-content: space-between;
+      align-items: center; } }
 
 .healthplan__tabset > input:first-child:checked ~ .healthplan__tabset-panels > .healthplan__tabset-panel:first-child,
 .healthplan__tabset > input:nth-child(3):checked ~ .healthplan__tabset-panels > .healthplan__tabset-panel:nth-child(2),
@@ -1038,6 +1099,9 @@ body {
   margin: 8rem 0 8rem 0;
   display: flex;
   justify-content: center; }
+  @media only screen and (max-width: 31.25em) {
+    .section-partners {
+      margin: 4rem 0; } }
 
 .partners__title {
   text-align: center; }
@@ -1047,3 +1111,7 @@ body {
     font-size: 2.4rem;
     line-height: 2.88rem;
     color: #01232B; }
+
+@media only screen and (max-width: 31.25em) {
+  .partners {
+    width: 100%; } }
