@@ -44,6 +44,12 @@
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(calc(-25rem * 7)); } }
+
 *,
 *::after,
 *::before {
@@ -313,7 +319,8 @@ body {
   padding: 2rem;
   border-radius: .4rem;
   border: 1px solid #DEE2E6;
-  position: relative; }
+  position: relative;
+  animation: moveInBottom 1s ease-out; }
   .plan-card__heading {
     margin-bottom: 1.4rem; }
     .plan-card__heading--title {
@@ -366,6 +373,35 @@ body {
     color: #fff !important; }
   .plan-card:not(:last-child) {
     margin-right: 1rem; }
+
+.slider {
+  background: #fff;
+  height: 10rem;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 120rem; }
+  .slider::before, .slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 10rem;
+    position: absolute;
+    width: 20rem;
+    z-index: 2; }
+  .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg); }
+  .slider::before {
+    left: 0;
+    top: 0; }
+  .slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(25rem * 14); }
+  .slider .slide {
+    height: 10rem;
+    width: 25rem; }
 
 .container {
   padding: 0;
@@ -534,7 +570,10 @@ body {
     display: none;
     position: absolute;
     z-index: 1;
-    box-shadow: 0 0.3em 1.2em rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 0.3em 1.2em rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    padding-left: -1.5rem;
+    width: 24rem; }
     @media only screen and (max-width: 56.25em) {
       .navigation__dropdown {
         position: static; } }
@@ -611,6 +650,44 @@ body {
       transform: rotate(45deg); }
     #nav-toggle.active span:after {
       transform: rotate(-45deg); }
+
+.dropdown-container {
+  display: flex;
+  color: #294B53;
+  border-radius: .4rem;
+  margin: 2rem 1.2rem 1.4rem 0; }
+  .dropdown-container:not(:last-child) {
+    margin-bottom: 0;
+    padding-bottom: 0; }
+  .dropdown-container:last-child {
+    margin-top: 0;
+    padding-top: 0; }
+  .dropdown-container-icon {
+    align-self: flex-start;
+    margin: .1rem;
+    border-radius: .6rem; }
+    .dropdown-container-icon-white {
+      display: none; }
+  .dropdown-container-text {
+    margin-left: .8rem; }
+    .dropdown-container-text-primary {
+      font-family: 'RedHatText', sans-serif;
+      font-weight: 500 !important;
+      font-size: 1.4rem;
+      line-height: 2.2rem;
+      margin-bottom: .8rem; }
+    .dropdown-container-text-secondary {
+      font-family: 'RedHatText', sans-serif;
+      font-weight: 300 !important;
+      font-size: 1.1rem;
+      line-height: 1.8rem; }
+  .dropdown-container:hover, .dropdown-container:active {
+    color: #fff;
+    background-color: #0090B7; }
+    .dropdown-container:hover .dropdown-container-icon, .dropdown-container:active .dropdown-container-icon {
+      background-color: #fff; }
+    .dropdown-container:hover .navigation__dropdown, .dropdown-container:active .navigation__dropdown {
+      background-color: #0090B7 !important; }
 
 .footer {
   margin: 4rem 18rem 8rem 18rem;
@@ -956,3 +1033,17 @@ body {
 .healthplan__tabset > input:nth-child(9):checked ~ .healthplan__tabset-panels > .healthplan__tabset-panel:nth-child(5),
 .healthplan__tabset > input:nth-child(11):checked ~ .healthplan__tabset-panels > .healthplan__tabset-panel:nth-child(6) {
   display: block; }
+
+.section-partners {
+  margin: 8rem 0 8rem 0;
+  display: flex;
+  justify-content: center; }
+
+.partners__title {
+  text-align: center; }
+  .partners__title--primary {
+    font-family: 'RedHatDisplay', sans-serif;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 2.88rem;
+    color: #01232B; }
