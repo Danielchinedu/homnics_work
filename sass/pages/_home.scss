@@ -219,9 +219,11 @@
 .subscribe {
     width: 82.7rem;
     padding: 4rem auto;
-    background-color: $color-default-grey;
+    background-image: linear-gradient(to right bottom, rgba($color-tertiary,0.8), rgba($color-tertiary,0.5));
     padding-bottom: 4rem;
     border-radius: 1.6rem;
+
+    position: relative;
 
     &__text {
         text-align: center;
@@ -232,6 +234,7 @@
         display: flex;
         justify-content: center;
         margin: 0 auto;
+        z-index: 99;
 
         &-input {
             width: 30% !important;
@@ -246,6 +249,23 @@
     &-btn {
         padding: .8rem 1.5rem !important;
         font-size: 1.2rem !important;
+    }
+
+    &__img {
+        width: 20%;
+        height: 100%;
+
+        position: absolute;
+        right: 0.8rem;
+        top: 2%;
+        z-index: -1;
+
+        @include respond(small-phone) {
+            right: 0;
+            top: 10%;
+            width: 40%;
+            height: 80%;
+        }
     }
 }
 
