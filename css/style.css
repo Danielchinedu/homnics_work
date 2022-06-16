@@ -116,7 +116,7 @@ body {
 
 .heading-primary {
   text-transform: capitalize;
-  font-family: "RedHatTextBold";
+  font-family: "RedHatDisplay";
   font-size: 5.2rem;
   line-height: 6rem;
   margin-bottom: 4rem;
@@ -942,16 +942,18 @@ body {
 .subscribe {
   width: 82.7rem;
   padding: 4rem auto;
-  background-color: #C4C4C4;
+  background-image: linear-gradient(to right bottom, rgba(183, 213, 194, 0.8), rgba(183, 213, 194, 0.5));
   padding-bottom: 4rem;
-  border-radius: 1.6rem; }
+  border-radius: 1.6rem;
+  position: relative; }
   .subscribe__text {
     text-align: center;
     margin: 4rem 0; }
   .subscribe__form {
     display: flex;
     justify-content: center;
-    margin: 0 auto; }
+    margin: 0 auto;
+    z-index: 99; }
     .subscribe__form-input {
       width: 30% !important; }
     .subscribe__form-btn {
@@ -960,6 +962,19 @@ body {
   .subscribe-btn {
     padding: .8rem 1.5rem !important;
     font-size: 1.2rem !important; }
+  .subscribe__img {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    right: 0.8rem;
+    top: 2%;
+    z-index: -1; }
+    @media only screen and (max-width: 31.25em) {
+      .subscribe__img {
+        right: 0;
+        top: 10%;
+        width: 40%;
+        height: 80%; } }
 
 .section-app {
   margin: 4rem 32rem 4rem 32rem;
