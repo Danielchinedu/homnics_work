@@ -410,6 +410,23 @@ body {
     .slider {
       width: 100%; } }
 
+.team-card {
+  width: 20%;
+  height: 28%;
+  background-color: #F5FFFF;
+  border-radius: 2rem;
+  text-align: center;
+  padding: 3rem;
+  margin: 1rem;
+  color: #0090B7;
+  transition: all 0.3s ease-in-out; }
+  .team-card__name {
+    margin-top: .8rem;
+    margin-bottom: .8rem; }
+  .team-card:hover {
+    background-color: #0090B7;
+    color: #fff; }
+
 .container {
   padding: 0;
   margin: 0; }
@@ -1130,3 +1147,100 @@ body {
 @media only screen and (max-width: 31.25em) {
   .partners {
     width: 100%; } }
+
+.section-about {
+  margin: 10rem 18rem 4rem 18rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.about {
+  width: 100%;
+  height: 100%; }
+  .about__text {
+    flex-basis: 50%; }
+    .about__text--title {
+      font-family: "RedHatDisplay", sans-serif;
+      font-weight: 500;
+      font-size: 3.2rem;
+      line-height: 3.84rem;
+      margin-bottom: 2.4rem; }
+    .about__text--paragraph {
+      font-family: "RedHatText", sans-serif;
+      font-weight: 300;
+      font-size: 1.6rem;
+      line-height: 3.0rem;
+      text-align: justify; }
+  .about__img {
+    width: 40%;
+    height: 30rem;
+    align-self: center;
+    background-color: #C4C4C4;
+    border-radius: 0.8rem; }
+
+.section-about-mission {
+  margin-top: 4rem;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/mission-bg.svg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat; }
+
+.about-mission {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  padding-top: 14rem;
+  padding-bottom: 14rem; }
+  .about-mission__title {
+    font-family: "RedHatDisplay", sans-serif;
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 3.84rem;
+    margin-bottom: 1.6rem; }
+  .about-mission__paragraph {
+    font-family: "RedHatText", sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 3.0rem; }
+
+.section-about-vision {
+  margin: 10rem 18rem 10rem 18rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .section-about-vision__text {
+    align-self: center; }
+
+.section-about-team {
+  margin: 10rem 18rem 4rem 18rem;
+  text-align: center; }
+
+.about-team__text--title {
+  font-family: "RedHatDisplay", sans-serif;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 3.84rem;
+  margin-bottom: 1rem; }
+
+.about-team__text--paragraph {
+  font-family: "RedHatText", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 3.0rem;
+  margin-bottom: 2rem; }
+
+.about-team__img {
+  width: 68%;
+  margin: 0 auto;
+  height: 50rem;
+  background-color: #C4C4C4;
+  border-radius: 0.8rem; }
+
+.section-team {
+  margin: 6rem 18rem 10rem 18rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
