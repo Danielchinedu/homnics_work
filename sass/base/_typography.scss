@@ -39,9 +39,9 @@ body {
 }
 
 .heading-secondary {
-    // color: $color-white;
-    font-size: 2.2rem;
-    margin-bottom: 4rem;
+    // color: $color-white; .5rem = 5px
+    font-size: 2.2rem; //22px
+    margin-bottom: 4rem; //40px
     
     animation: moveInRight 1s ease-out;
 }
