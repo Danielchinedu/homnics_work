@@ -29,7 +29,7 @@ body {
 }
 
 .heading-primary {
-    // color: $color-white;
+   
     text-transform: capitalize;
     font-family: "RedHatDisplay";
     font-size: 5.2rem;
@@ -39,9 +39,9 @@ body {
 }
 
 .heading-secondary {
-    // color: $color-white; .5rem = 5px
-    font-size: 2.2rem; //22px
-    margin-bottom: 4rem; //40px
+    
+    font-size: 2.2rem; 
+    margin-bottom: 4rem; 
     
     animation: moveInRight 1s ease-out;
 }
